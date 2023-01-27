@@ -139,15 +139,28 @@
 {
   "userid": "账号",
   "name": "xxx",
-  "dataDesc": ["教学班1","教学班2", /*...*/],
-  "params": [
+  "charts": [
     {
-      "dataLabel": "作业平均分",
-      "dataVals": [75,70,75,77,73,80,71]
+      "dataDesc": ["教学班1","教学班2", /*...*/],
+      "params": [
+        {
+          "dataLabel": "作业平均分",
+          "dataVals": [75,70,75,77,73,80,71]
+        },
+        {
+          "dataLabel": "到课率%",
+          "dataVals": [/* 元素个数一样 */]
+        }
+      ]
     },
     {
-      "dataLabel": "到课率%",
-      "dataVals": [/* 元素个数一样 */]
+      "dataDesc": ["满分","优秀","及格","不及格"],
+      "params": [
+        {
+          "dataLabel": "考试成绩分布",
+          "dataVals": [20,100,85,15]
+        }
+      ]
     }
   ]
 }
