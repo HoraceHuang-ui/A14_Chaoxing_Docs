@@ -23,7 +23,7 @@ func (s Stu) getScore() int {
 	res += float64(s.Answer*20+80) * 0.05
 	id := clazzId[s.Clazz]
 	res += float64(s.Checkin) / float64(maxCheck[id]) * 100 * 0.2
-	res += float64(100-2*s.Discuss) * 0.05
+	res += float64(74+2*s.Discuss) * 0.05
 	res += float64(s.Homework) / float64(maxHomework[id]) * 100 * 0.25
 	res += float64(s.Mission) / float64(maxMission[id]) * 100 * 0.15
 	res += float64(s.Exam) / float64(maxExam[id]) * 100 * 0.3
