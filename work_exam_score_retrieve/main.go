@@ -85,7 +85,7 @@ func main() {
 			// Retrieve scores for each exam
 			col := 'F'
 			for _, e := range exams {
-				score := 0
+				var score float64 = 0.0
 				scoredb, err := db.Query("SELECT score FROM t_exam_answer WHERE personid=? AND exam_id=?", id, e)
 				if err != nil {
 					fmt.Println(err)
@@ -188,7 +188,7 @@ func main() {
 			// Retrieve scores for each homework
 			col := 'F'
 			for _, w := range works {
-				score := 0
+				var score float64 = 0.0
 				scoredb, err := db.Query("SELECT score FROM t_work_answer WHERE personid=? AND work_id=?", id, w)
 				if err != nil {
 					fmt.Println(err)
